@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<main role="main">
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+
+
+        <form method="post">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">Email address</label>
+                        <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Date">Date</label>
+                        <input type="text" class="form-control" id="Date" placeholder="When did you eat this slinger?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Location">Location</label>
+                        <input type="text" class="form-control" id="Location" placeholder="Where did you eat this slinger?">
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Your Review</label>
+                        <textarea class="form-control" id="UserReview" rows="10"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-danger">Cancel</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>

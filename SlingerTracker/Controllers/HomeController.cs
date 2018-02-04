@@ -13,14 +13,14 @@ namespace SlingerTracker.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult EntryForm()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ListView()
         {
             ViewBag.Message = "Your contact page.";
 
