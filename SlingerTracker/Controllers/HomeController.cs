@@ -13,7 +13,7 @@ namespace SlingerTracker.Controllers
             return View();
         }
 
-        public ActionResult EntryForm()
+        public ActionResult AddEntry()
         {
             ViewBag.Message = "Your application description page.";
 
