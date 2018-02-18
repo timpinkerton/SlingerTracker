@@ -11,7 +11,7 @@ namespace SlingerTracker.Controllers
 {
     public class HomeController : Controller
     {
-
+        // ?? creating an instance of the Entries repository ??
         private EntriesRepository _entryRepository = null;
 
         public HomeController()
@@ -35,8 +35,10 @@ namespace SlingerTracker.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            // calling the GetEntries method from the EntriesRepository class
             var entry  = _entryRepository.GetEntries(); 
 
+            // returning the ListView with entry as parameter
             return View(entry);
         }
     }

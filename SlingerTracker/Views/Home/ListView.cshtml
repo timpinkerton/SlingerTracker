@@ -9,19 +9,25 @@
 <main role="main">
 
     <div class="container">
-
-        <h1>This will be a list of entries</h1>
-
-        <div class="row">
+        <table class="table">
+            
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Location</th>
+            </tr>
+            
             @foreach (var entry in Model)
             {
-                <div class="col-md-3">
-                    <h4>@Html.ActionLink(entry.DisplayText, "Detail", new { id = entry.Id })</h4>
-                </div>
+                
+                <tr>
+                    <td>@entry.Date</td>
+                    <td>@entry.Name</td>
+                    <td>@entry.Location</td>
+                </tr>
+                //<h4>@Html.ActionLink(entry.DisplayText, "Detail", new { id = entry.Id })</h4>
             }
-
-        </div>
-
+        </table>       
     </div>
 
 </main>

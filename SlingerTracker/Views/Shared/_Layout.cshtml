@@ -19,7 +19,7 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">i ate a slinger</a>
+        <a class="navbar-brand" href="@Url.Action("Index", "Home")">i ate a slinger</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +35,7 @@
                     <a class="nav-link" href="@Url.Action("AddEntry", "Home")">Entry Form</a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("ListView", "Home")">List<span class="sr-only">(current)</span></a>
                 </li>
 
@@ -48,7 +48,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - iateaslinger.com</p>
         </footer>
     </div>
 

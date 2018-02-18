@@ -16,7 +16,7 @@
 
             <p>You want to read about other people's slinger's?  Click below. </p>
 
-            <p><a class="btn btn-primary btn-lg" href="listview.html" role="button">Slinger List &raquo;</a></p>
+            <p><a class="btn btn-primary btn-lg" href="@Url.Action("ListView", "Home")" role="button">Slinger List &raquo;</a></p>
         </div>
     </div>
 
@@ -29,12 +29,10 @@
             </div>
             <div class="col-md-6">
                 <p>Click the Entry Form button to enter your slinger info.</p>
-                <p><a class="btn btn-secondary" href="slingerform.html" role="button">Entry Form &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="@Url.Action("AddEntry", "Home")" role="button">Entry Form &raquo;</a></p>
             </div>
 
         </div>
-
-        <hr>
 
     </div> <!-- /container -->
 
