@@ -43,7 +43,7 @@ namespace SlingerTracker.Data
             }
         };
 
-        //This will return a collection of entries
+        //This will return an array of entry objects
         public Entry[] GetEntries()
         {
             return _entries; 
