@@ -1,4 +1,6 @@
-﻿@{
+﻿@model SlingerTracker.Models.Entry[]
+
+@{
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
@@ -9,6 +11,16 @@
     <div class="container">
 
         <h1>This will be a list of entries</h1>
+
+        <div class="row">
+            @foreach(var entry in Model)
+            {
+                <div class="col-md-3">
+                    <h4>@Html.ActionLink(entry.DisplayText, "Detail", new { id = entry.Id })</h4>
+                </div>
+            }
+
+        </div>
 
     </div>
 
